@@ -1,5 +1,6 @@
 <?php
     include 'printVariable.php';
+    // mang lien tuc - mang so nguyen
     // // C1
     // $courses = array();
     // $courses[]= 'PHP';
