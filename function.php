@@ -10,14 +10,16 @@
     
     <div class="content">
         <?php
-            function createBox(){
-                $value = '<div style="width:200px; height: 50px;">';
-                $value .= '<p>Box A <span>(200x50)</span></p>';
-                $value .=  '</div>';
-                return $value;
+            function createBox($content, $width=150, $height=50){
+                $result = '<div style="width:'.$width.'px; height: '.$height.'px; border: 1px solid black;">';
+                $result .= '<p>'.$content.'<span>('.$width.'x'.$height.')</span></p>';
+                $result .= '</div>';
+                return $result;
             }
-            $result = createBox();
-            echo $result;
+            $boxA = createBox('Box A', 300, 200);
+            $boxB = createBox('Box B');
+            echo $boxA;
+            echo $boxB;
         ?>
     </div>
 </body>
