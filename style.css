@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  width: 800px;
+  height: 500px;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.content h1 {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+ul {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.result {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
