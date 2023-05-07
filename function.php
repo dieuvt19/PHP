@@ -11,15 +11,14 @@
     <div class="content">
         <?php
             function createBox(){
-                echo '<div style="width:200px; height: 50px;">';
-                echo '<p>Box A <span>(200x50)</span></p>';
-                echo '</div>';
+                $value = '<div style="width:200px; height: 50px;">';
+                $value .= '<p>Box A <span>(200x50)</span></p>';
+                $value .=  '</div>';
+                return $value;
             }
-            createBox();
-            createBox();
+            $result = createBox();
+            echo $result;
         ?>
     </div>
-     
-    
 </body>
 </html>
