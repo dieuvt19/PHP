@@ -1,26 +1,43 @@
 <?php
-    $courses = array();
-    $courses[]= 'PHP';
-    $courses[]= 'Zend Framework';
-    $courses[]= 'Joomla';
+    include 'printVariable.php';
+    // // C1
+    // $courses = array();
+    // $courses[]= 'PHP';
+    // $courses[]= 'Zend Framework';
+    // $courses[]= 'Joomla';
 
-    $length = count($courses);
-    echo $length;
+    // // C2
+    // $courses = array();
+    // $courses[0]= 'PHP';
+    // $courses[1]= 'Zend Framework';
+    // $courses[2]= 'Joomla';
 
-    // C1: length
-    // if ($length > 0) {
-    //     echo 'Khong la mang rong';
-    // } else {
-    //     echo 'Mang rong';
-    // }
-
-    // C2: length
+    // C3
+    $courses = array('PHP','Zend Framework','Joomla');
+    // $courses = array();
+   
+    // echo $courses[1];
+    // // use vong lap for
     // if (!empty($courses)) {
-    //     echo 'Khong la mang rong';
+    //     for ($i=0; $i < count($courses); $i++) { 
+    //         echo $courses[$i] . '<br/>';
+    //     }
     // } else {
-    //     echo 'Mang rong';
+    //     echo 'Khong in';
     // }
-    echo '<pre>';
-    print_r($courses);
-    echo '</pre>';
+
+    printVariable($courses);
+    // use vong lap foreach
+    if (!empty($courses)) {
+        foreach ($courses as $key => $value) {
+            echo $value . '<br/>';
+        }
+    } else {
+        # code...
+    }
+
+    /*
+
+    */
+    
 ?>
