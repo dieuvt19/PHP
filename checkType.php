@@ -1,44 +1,23 @@
 <?php
     include 'printVariable.php';
-    // mang lien tuc - mang so nguyen
+    // mang khong lien tuc - mang ket hop
     // // C1
     // $courses = array();
-    // $courses[]= 'PHP';
-    // $courses[]= 'Zend Framework';
-    // $courses[]= 'Joomla';
+    // $courses['php']= 'PHP';                 // index: php (key)
+    // $courses['zend']= 'Zend Framework';     // index: zend (key)
+    // $courses['joomla']= 'Joomla';           // key = joomla
+    // $courses[]= 'Item 1';                   // key = 0
+    // $courses[]= 'Item 2';                   // key = 1
 
-    // // C2
+    // C2
+    $courses = array('php' => 'PHP','zend'=>'Zend Framework','joomla'=>'Joomla', 0=>'Item 1', 1=>'Item 2');
     // $courses = array();
-    // $courses[0]= 'PHP';
-    // $courses[1]= 'Zend Framework';
-    // $courses[2]= 'Joomla';
 
-    // C3
-    $courses = array('PHP','Zend Framework','Joomla');
-    // $courses = array();
-   
-    // echo $courses[1];
-    // // use vong lap for
-    // if (!empty($courses)) {
-    //     for ($i=0; $i < count($courses); $i++) { 
-    //         echo $courses[$i] . '<br/>';
-    //     }
-    // } else {
-    //     echo 'Khong in';
-    // }
-
-    printVariable($courses);
+    // printVariable($courses);
     // use vong lap foreach
     if (!empty($courses)) {
         foreach ($courses as $key => $value) {
-            echo $value . '<br/>';
+            echo $key . ':' . ' ' . $value . '<br/>';
         }
-    } else {
-        # code...
     }
-
-    /*
-
-    */
-    
 ?>
